@@ -1,16 +1,11 @@
-    <?php
-        $hello = ['anderson', 'Rogério', 'de', 'Oliveira', 'Rodrigues', 'Junior'];
-    ?>
-    
-    <style>
-        li{
-            color:red;
-        }
-    </style>
+@extends('layouts.main')
 
-    <h1>The name is {{$name}}</h1>
-    @foreach($hello as $word)
-            <ul>
-                <li>{{$word}}</li>
-            </ul>
-    @endforeach
+@section('title', 'Name')
+
+@section('titlegreat', 'New title')
+
+@section('content')
+
+<h1>Site</h1>
+
+@endsection
