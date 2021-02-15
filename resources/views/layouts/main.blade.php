@@ -8,9 +8,15 @@
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    <h1>@yield('titlegreat')</h1>
-    @yield('content')
+    <header>
+        <nav>
+            <a href="/products">First</a>
+            <a href="/">Refresh</a>
+        </nav>
+    </header>
 
+    @yield('content')
+    
     <footer>
         Footer &copy; 
     </footer>

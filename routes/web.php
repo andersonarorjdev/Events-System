@@ -1,9 +1,11 @@
 <?php
 
 use App\Http\Controllers\{
-    PostController
+    EventsController
 };
+
 use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -19,3 +21,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index', ['name' => 'anderson']);
 });
+
+Route::get('/events',[EventsController::class, 'index']);
+
