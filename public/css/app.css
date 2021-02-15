@@ -1,1 +1,83 @@
+body{
+    display: flex;
+    flex-direction: column;
 
+    align-items: center;
+}  
+
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding:40px 20px;
+
+    background-color: black;
+
+   
+}
+
+nav > #logoNavbar > a > img{
+    width: 100px;
+    height: 100px;
+}
+
+#mainMenu > a{
+    color:#FFFFFF;
+
+    font-size: 18px;
+    margin:0px 50px;
+
+    font-weight: bolder;
+    border-bottom:1px solid #FFFFFF;
+    padding:0px 0px 0px 0px;
+}
+
+nav > button{
+    background-color: #000000;
+    color: #FFFFFF;
+
+    border: 1px solid #FFFFFF;
+
+    font-weight: bolder;
+    font-size: 13px;
+    padding: 10px 25px;
+}
+
+nav > button:hover{
+    background-color: #FFFFFF;
+    color:#000000;
+    border: 1px double #000000;
+}
+
+
+
+
+
+
+
+
+
+
+main{
+    background-color: #FFFFFF;
+
+    height: 100vh;
+}
+
+footer{
+    background-color: #000000;
+    color:#FFFFFF;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding:20px;
+
+    font-weight: bolder;
+
+}

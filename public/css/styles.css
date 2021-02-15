@@ -1,7 +1,43 @@
 *{
-    color:purple;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
+
+
 body{
-    background-color: black;
+    min-width:100vw;
+    height: 100vh;
+
+    max-width: 100vw;
+    min-width: 100vw;
+}
+
+
+header, main, footer{
+    width: 100vw;
+}
+
+nav{
+    height:70px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+main{
+    min-width: 100vw;
+}
+
+
+
+
+
+
+footer{
+    min-width: 100vw;
 }
