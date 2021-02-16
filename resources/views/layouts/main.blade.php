@@ -6,19 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title')</title>
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/app.css">
 </head>
 <body>
     <header>
         <nav>
-            <a href="/products">First</a>
-            <a href="/">Refresh</a>
+            <div id="logoNavbar">
+                <a href="/"><img src="/assets/Eventsign.png" alt="Event Icon"></a>
+            </div>
+
+            <div id="mainMenu">             
+                <a href="/events/list">List Events</a>
+                <a href="/events/create">Create Event</a>
+                <a href="/About">About Us</a>    
+                <a href="/contact">Contact US</a>
+            </div>
+
+            <button>Login</button>
         </nav>
     </header>
 
-    @yield('content')
+    <main>
+        @yield('content')
+    </main>
     
     <footer>
-        Footer &copy; 
+        <span>
+            Events &copy; 
+        </span>
+        <span>
+            Events All Rights Reseverd
+        </span>
+        <span>
+            Events <?= date("Y")?>
+        </span>
     </footer>
 </body>
 </html>

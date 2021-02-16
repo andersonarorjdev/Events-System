@@ -19,8 +19,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index', ['name' => 'anderson']);
+    return view('index');
 });
 
-Route::get('/events',[EventsController::class, 'index']);
+Route::get('/events/list', [EventsController::class,'index']);
 

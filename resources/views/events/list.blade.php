@@ -15,18 +15,6 @@
         <h4>{{$event->title}}</h4>
         <h5>{{$event->description}}</h5>
     @endforeach
-    <a href="/events">Acessar á pagina para criar</a>
-    
     @endsection
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-

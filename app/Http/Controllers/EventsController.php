@@ -11,10 +11,10 @@ class EventsController extends Controller
     public function index(){
 
         $events = Event::all();
-        return view('events.create', ['events' => $events]);
+        return view('events.list', ['events' => $events]);
     }
 
     public function create(){
-        return view('./events/create');
+        return view('events.create');
     }
 }
