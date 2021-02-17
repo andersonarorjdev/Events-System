@@ -2,5 +2,5 @@
 
     @section('titlegreat', 'New title')
     @section('content')
-
+    
     @endsection

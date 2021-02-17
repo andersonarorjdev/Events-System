@@ -14,7 +14,7 @@ class EventsController extends Controller
         return view('events.list', ['events' => $events]);
     }
 
-    public function create(){
+    public function store(){
         return view('events.create');
     }
 }

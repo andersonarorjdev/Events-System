@@ -8,15 +8,15 @@
     <title>@section('title', 'Name')</title>
 </head>
 <body>
-    @section('titlegreat', 'New title')
     @section('content')
+    <h1>Criar Eventos</h1>
+        <form action="" method="post">
+            <input type="text" name="TitleEvent"
+                placeholder="Digite aqui o nome do seu evento"
+            >
+            <button type="submit">Enviar</button>
+        </form>
 
-    @foreach($events as $event)
-        <h4>{{$event->title}}</h4>
-        <h5>{{$event->description}}</h5>
-    @endforeach
-    <a href="/events">Acessar á pagina para criar</a>
-    
     @endsection
 </body>
 </html>
