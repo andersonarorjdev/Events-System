@@ -12,8 +12,9 @@
 <body>
     @section('content')
             <h1>Criar Eventos</h1>
-        <form action="/events" method="post">
+        <form action="/events" enctype="multipart/form-data" method="post">
             @csrf
+            <input type="file" name="image"  id="image">
             <input type="text" name="title" required title="Esse campo precisa ser preenchido"
                 placeholder="Digite aqui o nome do seu evento"
             >

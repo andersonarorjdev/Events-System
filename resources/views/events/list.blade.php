@@ -13,6 +13,9 @@
         <main id="mainList"> 
             @foreach($events as $event)
                 <div id="cards">
+                    @if($event->image)    
+                        <img src="/img/events/{{$event->image}}" alt="image of event">
+                    @endif
                     <h4 id="titleEventColor">{{$event->title}}</h4>
                     <h5>{{$event->description}}</h5>
                 </div>
