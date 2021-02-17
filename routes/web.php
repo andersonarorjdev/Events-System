@@ -23,6 +23,6 @@ Route::get('/', function () {
 });
 
 Route::get('/events/list', [EventsController::class,'index']);
+Route::post('/events',[EventsController::class, 'store']);
 
-
-Route::get('/events/create', [EventsController::class, 'store']);
+Route::get('/events/create', [EventsController::class, 'create']);
