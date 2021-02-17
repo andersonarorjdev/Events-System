@@ -16,7 +16,7 @@ nav{
 
     background-color: black;
 
-   
+
 }
 
 nav > #logoNavbar > a > img{
@@ -31,14 +31,16 @@ nav > #logoNavbar > a > img{
     margin:0px 50px;
 
     font-weight: bolder;
-    border-bottom:1px solid #FFFFFF;
-    padding:0px 0px 0px 0px;
+    font-family: monospace;
+    letter-spacing: 2px;
+    
 }
 
 nav > button{
     background-color: #000000;
     color: #FFFFFF;
 
+    margin:0px 20px 0px 0px;
     border: 1px solid #FFFFFF;
 
     font-weight: bolder;
@@ -51,14 +53,6 @@ nav > button:hover{
     color:#000000;
     border: 1px double #000000;
 }
-
-
-
-
-
-
-
-
 
 
 main{

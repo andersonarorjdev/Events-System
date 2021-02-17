@@ -1,0 +1,33 @@
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    width: 100%;
+    height: 70%;
+}
+
+#searchForm{
+    margin: 100px 0px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+#searchForm > form > input{
+    width: 40vw;
+
+    padding: 10px 20px;
+}
+
+#searchForm > form > button{
+    margin: 20px;
+
+    padding: 12px 20px;
+
+    background-color:#e49707fb;
+    color:#FFFFFF;
+    font-weight: bolder;
+
+    border : 0px;
+}

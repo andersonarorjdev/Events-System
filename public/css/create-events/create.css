@@ -1,0 +1,47 @@
+
+
+form{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items: center;
+
+    height:auto;
+}
+
+input{
+    width: 60vw;
+
+    margin:16px 0px;
+}
+
+#selectWithTextarea{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#selectWithTextarea > select{
+    margin:0px 20px;
+}
+
+#selectWithTextarea > textarea{
+    width: 50vw;
+}
+
+h1{
+    text-align: center;
+    margin:10px 0px 0px 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+input , textarea , select{
+    padding:10px;
+    border:1px solid #000000;
+}
+
+button{
+    padding:10px 20px;
+
+    margin:10px 0px;
+}
