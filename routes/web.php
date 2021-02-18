@@ -23,6 +23,9 @@ Route::get('/', function () {
 });
 
 Route::get('/events/list', [EventsController::class,'index']);
+Route::get('/events/list/{id}', [EventsController::class, 'show']);
+Route::get('/events/create', [EventsController::class, 'create']);
+
 Route::post('/events',[EventsController::class, 'store']);
 
-Route::get('/events/create', [EventsController::class, 'create']);
+

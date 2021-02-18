@@ -18,6 +18,7 @@
                     @endif
                     <h4 id="titleEventColor">{{$event->title}}</h4>
                     <h5>{{$event->description}}</h5>
+                    <a href="/events/list/{{$event->id}}">Saber mais</a>
                 </div>
             @endforeach
         </main>
