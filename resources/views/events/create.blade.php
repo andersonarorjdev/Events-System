@@ -25,11 +25,19 @@
                     <option value="0">Não</option>
                     <option value="1">Sim</option>
                 </select>
-                <textarea name="description" id="descricao" cols="30" title="Esse campo precisa ser preenchido" rows="10"
-                    placeholder="Como será o evento?" required
-                ></textarea>
-                <input type="checkbox" name="items[]" value="Cerveja"/>Cerveja Grátis
-                <input type="checkbox" name="items[]" value="palco" id="" />O evento vai ter palco
+                <input type="date" name="date" id="" />
+                <div>
+                    <textarea name="description" id="descricao" cols="30" title="Esse campo precisa ser preenchido" rows="10"
+                         placeholder="Como será o evento?" required
+                     ></textarea>
+                </div>
+                <div>
+                    <label for="cerveja">Cerveja gratuita</label>
+                    <input type="checkbox" name="items[]" value="Cerveja" id="cerveja">
+                    <label for="palco">Palco</label>
+                    <input type="checkbox" name="items[]" value="palco" id="palco" >
+                </div>
+               
             </div>
             <button type="submit">Enviar</button>
         </form>

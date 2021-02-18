@@ -26,6 +26,7 @@ class EventsController extends Controller
         //The Model receives datas from form
         $event->title = $request->title;
         $event->city = $request->city;
+        $event->date = $request->date;
         $event->description = $request->description;
         $event->private = $request->private;
         $event->category = $request->category;

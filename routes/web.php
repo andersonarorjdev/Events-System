@@ -6,6 +6,8 @@ use App\Http\Controllers\{
 
 use Illuminate\Support\Facades\Route;
 
+use App\Models\Event;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -19,7 +21,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index');
+
+    $events = Event::all();
+    return view('index', ['events' => $events]);
 });
 
 Route::get('/events/list', [EventsController::class,'index']);
