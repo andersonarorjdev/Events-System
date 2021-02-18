@@ -9,15 +9,21 @@
             @endif
             
             <div id="searchForm">
-                <form action="" method="get">
-                    <input type="text" placeholder="Pesquisar Evento">
+                <form action="/" method="get">
+                    <input type="text" name="search" placeholder="Pesquisar Evento">
                     <button>Pesquisar Evento</button>
                 </form>
+
+                @if($search)
+                    <h1>Buscando por: {{$search}}</h1>
+                    @foreach($events as $event)
+                        <h1>{{$event->title}}</h1>
+                        <h4>{{$event->description}}</h4>
+                    @endforeach
+                @else
+
+                @endif
             </div>
+           
         </section>
-            @if(count($events) == 0)
-                <h1>Não há eventos disponiveis!</h1>
-            @else
-                <h1>Há eventos disponiveis, consulte a página de eventos</h1>
-            @endif
     @endsection
