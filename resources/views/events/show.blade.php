@@ -21,6 +21,10 @@
             @else
                 <h1>O evento não é privado</h1>
             @endif
+            
+            @foreach($event->items as $item)
+                <h5>{{$item}}</h5>
+            @endforeach
         </main>
     @endsection
 </body>

@@ -28,6 +28,8 @@
                 <textarea name="description" id="descricao" cols="30" title="Esse campo precisa ser preenchido" rows="10"
                     placeholder="Como será o evento?" required
                 ></textarea>
+                <input type="checkbox" name="items[]" value="Cerveja"/>Cerveja Grátis
+                <input type="checkbox" name="items[]" value="palco" id="" />O evento vai ter palco
             </div>
             <button type="submit">Enviar</button>
         </form>
