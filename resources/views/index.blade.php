@@ -23,12 +23,14 @@
                     <h1>Buscando por: "{{$search}}"</h1>
                     @if($eventsCount > 0)
                     <h3>Foram encontrados {{$eventsCount}} resultados para {{$search}}</h3>
-                    @foreach($events as $event)
                         <div id="Cards">
-                            <h1>{{$event->title}}</h1>
-                            <h4>{{$event->description}}</h4>
+                            @foreach($events as $event)
+                                <div id="Card">
+                                    <h1>{{$event->title}}</h1>
+                                    <h4>{{$event->description}}</h4>
+                                </div>
+                            @endforeach
                         </div>
-                    @endforeach
                     @else
                     <h1>Não foram encotrados resultados para {{$search}}</h1>
                     @endif

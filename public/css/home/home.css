@@ -51,7 +51,7 @@ main{
 
 #inputWithButton{
     background-color: #FFFFFF;
-    padding:10px 20px;
+    padding:10px 10px;
 
     display: flex;
     justify-content: space-between;
@@ -84,6 +84,11 @@ main{
 
 #Cards{
     display: flex;
+    justify-content: space-around;
+}
+
+#Card{
+    display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
@@ -97,5 +102,6 @@ main{
     box-shadow: inset 6px 6px 12px #222b2d,
                 inset -6px -6px 12px #4c6367
 }
+
 
 

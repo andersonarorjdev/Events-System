@@ -1,42 +1,101 @@
-
+body{
+    max-width: 100vw;
+}
 
 form{
-  
-}
+    width: 100vw;
+    height:100%;
 
-input{
-    width: 60vw;
-
-    margin:16px 0px;
-}
-
-#selectWithTextarea{
     display: flex;
     flex-direction: row;
-    align-items: center;
-}
+    justify-content: space-between;
 
-#selectWithTextarea > select{
-    margin:0px 20px;
-}
-
-#selectWithTextarea > textarea{
-    width: 50vw;
+    padding:0px 0px 40px 0px;
 }
 
 h1{
+    padding:10px 0px 0px 0px;
     text-align: center;
-    margin:10px 0px 0px 0px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    color:#FFFFFF;
 }
 
-input , textarea , select{
-    padding:10px;
-    border:1px solid #000000;
+#leftSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 50vw;
+}
+
+input{
+    box-shadow: inset 6px 6px 12px #222b2d,
+                inset -6px -6px 12px #4c6367;
+    background: #37474A;
+    border:none;
+    border-radius: 30px;
+
+    padding:10px 20px;
+}
+
+input:focus{
+    outline: none;
+    border:none;
+}
+
+textarea:focus{
+    outline: none;
+    border:none;
+}
+
+textarea{
+    box-shadow: inset 6px 6px 12px #222b2d,
+                inset -6px -6px 12px #4c6367;
+    background: #37474A;
+    border:none;
+    border-radius: 30px;
+
+    padding:10px 20px;
+}
+
+#leftSection > input{
+    width: 40vw;
+}
+
+#leftSection > textarea{
+    width: 40vw;
+}
+
+#rightSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 50vw;
+}
+
+#buttonLine{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label{
+    color:#ffffff;
+}
+
+select{
+    background-color:#ffffff;
+    padding:5px 10px;
 }
 
 button{
     padding:10px 20px;
 
-    margin:10px 0px;
+    font-size: 15px;
+    font-weight: bolder;
+    font-family: monospace;
 }
