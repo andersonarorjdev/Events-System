@@ -21,6 +21,8 @@ class EventsController extends Controller
             $events = Event::where([
                 ['title', 'like', '%'.$search.'%']
             ])->get();
+            $eventsCount = count($events);
+            return view('index',['events' => $events, 'search' => $search, 'eventsCount' => $eventsCount]);
 
         }else{
             $events = Event::all();    

@@ -3,27 +3,36 @@
 
     @section('titlegreat', 'New title')
     @section('content')
-        <section>
+        <main>
             @if(session('msg'))
                 <p>{{session('msg')}}</p>
             @endif
             
-            <div id="searchForm">
+            <section id="searchForm">
                 <form action="/" method="get">
-                    <input type="text" name="search" placeholder="Pesquisar Evento">
-                    <button>Pesquisar Evento</button>
+                    <div id="inputWithButton">
+                        <input type="text" name="search" placeholder="Pesquisar Evento">
+                        <button>Pesquisar Evento</button>
+                    </div>
                 </form>
 
+                
+            </section>
+            <section id="searchResults">
                 @if($search)
-                    <h1>Buscando por: {{$search}}</h1>
+                    <h1>Buscando por: "{{$search}}"</h1>
+                    @if($eventsCount > 0)
+                    <h3>Foram encontrados {{$eventsCount}} resultados para {{$search}}</h3>
                     @foreach($events as $event)
-                        <h1>{{$event->title}}</h1>
-                        <h4>{{$event->description}}</h4>
+                        <div id="Cards">
+                            <h1>{{$event->title}}</h1>
+                            <h4>{{$event->description}}</h4>
+                        </div>
                     @endforeach
-                @else
-
+                    @else
+                    <h1>Não foram encotrados resultados para {{$search}}</h1>
+                    @endif
                 @endif
-            </div>
-           
-        </section>
+            </section>       
+    </main>
     @endsection
