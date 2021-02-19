@@ -6,13 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title')</title>
     <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/app.css">
 </head>
 <body>
     <header>
         <nav>
             <div id="logoNavbar">
-                <a href="/"><img src="/assets/Eventsign.png" alt="Event Icon"></a>
+                <a href="/"><h1>Events</h1></a>
             </div>
 
             <div id="mainMenu">             
