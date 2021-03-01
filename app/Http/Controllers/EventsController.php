@@ -68,4 +68,12 @@ class EventsController extends Controller
          $event = Event::findOrFail($id);
          return view('events.show', ['event' => $event]);
     }
+
+    public function about(){
+        return view('events.about');
+    }
+
+    public function contact(){
+        return view('events.contact');
+    }
 }

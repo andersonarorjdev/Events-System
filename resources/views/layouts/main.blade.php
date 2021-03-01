@@ -17,7 +17,7 @@
             <div id="mainMenu">             
                 <a href="/events/list">List Events</a>
                 <a href="/events/create">Create Event</a>
-                <a href="/About">About Us</a>    
+                <a href="/about">About Us</a>    
                 <a href="/contact">Contact US</a>
             </div>
 
