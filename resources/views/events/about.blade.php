@@ -1,3 +1,6 @@
-@extends('layout.main');
+@extends('layouts.main');
 
-<h1>Hello World</h1>
+@section('content');
+    <h1>Hello World</h1>
+
+@endsection

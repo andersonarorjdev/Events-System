@@ -17,11 +17,14 @@
             <div id="mainMenu">             
                 <a href="/events/list">List Events</a>
                 <a href="/events/create">Create Event</a>
-                <a href="/about">About Us</a>    
-                <a href="/contact">Contact US</a>
+                <a href="/events/about">About Us</a>    
+                <a href="/events/contact">Contact US</a>
             </div>
 
-            <button>Login</button>
+            <div id="loginMenu">
+                <a href="/login">Login</a>
+                <a href="/register">Registrar</a>
+            </div>
         </nav>
     </header>
 
