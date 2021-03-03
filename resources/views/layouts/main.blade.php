@@ -20,11 +20,23 @@
                 <a href="/events/about">About Us</a>    
                 <a href="/events/contact">Contact US</a>
             </div>
-
+            @auth
+                <a href="/dashboard">Meus Eventos</a>
+                <form action="/logout" method="POST">
+                    @csrf
+                    <a 
+                        href="/logout"
+                        onclick="event.preventDefault();
+                        this.closest('form').submit();"
+                    >Logout</a>
+                </form>
+            @endauth
+            @guest
             <div id="loginMenu">
                 <a href="/login">Login</a>
                 <a href="/register">Registrar</a>
             </div>
+            @endguest
         </nav>
     </header>
 
