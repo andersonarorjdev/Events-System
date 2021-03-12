@@ -6,3 +6,5 @@
 @section('content')
          <h1>Here will be some information about this page or website</h1>
 @endsection
+
+

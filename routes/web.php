@@ -22,7 +22,7 @@ Route::get('/',[ EventsController::class, 'search']);
 
 Route::get('/events/list', [EventsController::class,'index']);
 Route::get('/events/list/{id}', [EventsController::class, 'show']);
-Route::get('/events/create', [EventsController::class, 'create']);
+Route::get('/events/create', [EventsController::class, 'create'])->middleware('auth');
 Route::get('/events/about', [EventsController::class, 'about']);
 Route::get('/events/contact', [EventsController::class, 'contact']);
 
