@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 use App\Models\Event;
 
+use App\Models\User;
+
 class EventsController extends Controller
 {
     public function index(){
@@ -68,9 +70,9 @@ class EventsController extends Controller
     }
 
     public function show($id){
-        $user_id = auth()->user();
-         $event = Event::findOrFail($id);
-         return view('events.show', ['event' => $event, 'user' => $user_id]);
+            $event = Event::findOrFail($id);
+            $user_id = User::where('id', $event->user_id)->first()->toArray();
+            return view('events.show', ['event' => $event, 'user' => $user_id]);
     }
 
     public function about(){
