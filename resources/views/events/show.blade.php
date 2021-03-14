@@ -13,6 +13,7 @@
         <main id="mainShow">
             <a href="/events/list">Voltar</a> 
             <img src="/img/events/{{$event->image}}" alt="">
+            <h1> Dono do evento:{{$user->name}}</h1>
             <h1>{{$event->title}}</h1>
             <h1>{{$event->description}}</h1>
             <h1>{{$event->city}}</h1>
