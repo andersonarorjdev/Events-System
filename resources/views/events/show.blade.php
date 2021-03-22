@@ -10,23 +10,29 @@
 </head>
 <body>
     @section('content')
-        <main id="mainShow">
+        <div id="backButton">
             <a href="/events/list">Voltar</a> 
-            <img src="/img/events/{{$event->image}}" alt="">
-            <h1> Dono do evento:{{$user['name']}}</h1>
-            <h1>{{$event->title}}</h1>
-            <h1>{{$event->description}}</h1>
-            <h1>{{$event->city}}</h1>
-            <h2>{{$event->date}}</h2>
-            @if($event->private)
-                <h1>O evento é privado</h1>
-            @else
-                <h1>O evento não é privado</h1>
-            @endif
-            
-            @foreach($event->items as $item)
-                <h5>{{$item}}</h5>
-            @endforeach
+        </div>
+        <main id="mainShow">
+            <section>
+                <img src="/img/events/{{$event->image}}" alt="Event Image" />
+            </section>
+            <section>
+                <h3> Dono do evento:{{$user['name']}}</h3>
+                <h3>{{$event->title}}</h3>
+                <h3>{{$event->description}}</h3>
+                <h3>{{$event->city}}</h3>
+                <h3>{{$event->date}}</h3>
+                @if($event->private)
+                    <h3>O evento é privado</h3>
+                @else
+                    <h3>O evento não é privado</h3>
+                @endif
+                
+                @foreach($event->items as $item)
+                    <h3>{{$item}}</h3>
+                @endforeach
+            </section>
         </main>
     @endsection
 </body>

@@ -12,14 +12,15 @@
     @section('content')
         <main id="mainList"> 
             @foreach($events as $event)
+            <a href="/events/list/{{$event->id}}">
                 <div id="cards">
                     @if($event->image)    
                         <img src="/img/events/{{$event->image}}" alt="image of event">
                     @endif
                     <h4 id="titleEventColor">{{$event->title}}</h4>
                     <h5>{{$event->description}}</h5>
-                    <a href="/events/list/{{$event->id}}">Saber mais</a>
                 </div>
+            </a>
             @endforeach
         </main>
     @endsection
